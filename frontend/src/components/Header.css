@@ -1,0 +1,383 @@
+/* ===========================
+        HEADER
+=========================== */
+
+.header {
+  width: 100%;
+
+  background: #ffffff;
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 999;
+
+  border-bottom: 1px solid #ececec;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+  max-width: 1350px;
+
+  margin: auto;
+
+  padding: 18px 30px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+/* ===========================
+      Logo
+=========================== */
+
+.logo-section {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+}
+
+.logo-dot {
+  width: 18px;
+
+  height: 18px;
+
+  border-radius: 50%;
+
+  background: #f5a623;
+
+  box-shadow: 0 0 10px rgba(245, 166, 35, 0.4);
+}
+
+.logo-section h1 {
+  font-size: 42px;
+
+  font-weight: 800;
+
+  color: #222;
+
+  line-height: 1;
+}
+
+.logo-section span {
+  display: block;
+
+  margin-top: 4px;
+
+  font-size: 13px;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  color: #888;
+}
+
+/* ===========================
+      Right Buttons
+=========================== */
+
+.header-right {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+.icon-btn {
+  width: 48px;
+
+  height: 48px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #f8f8f8;
+
+  cursor: pointer;
+
+  font-size: 20px;
+
+  transition: 0.3s;
+}
+
+.icon-btn:hover {
+  background: #f5a623;
+
+  color: #fff;
+}
+
+.saved-btn {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 12px 20px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #f8f8f8;
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.saved-btn span {
+  background: #f5a623;
+
+  color: #fff;
+
+  padding: 2px 8px;
+
+  border-radius: 30px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+.saved-btn:hover {
+  background: #fff2d9;
+}
+
+.saved-btn.active {
+  background: #f5a623;
+
+  color: #fff;
+}
+
+.saved-btn.active span {
+  background: #fff;
+
+  color: #f5a623;
+}
+
+.post-btn {
+  border: none;
+
+  padding: 14px 28px;
+
+  background: #f5a623;
+
+  color: #fff;
+
+  border-radius: 12px;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  box-shadow: 0 8px 20px rgba(245, 166, 35, 0.25);
+}
+
+.post-btn:hover {
+  background: #de9400;
+
+  transform: translateY(-2px);
+}
+
+/* ===========================
+      Responsive
+=========================== */
+
+@media (max-width: 900px) {
+  .header-container {
+    flex-direction: column;
+
+    gap: 20px;
+
+    align-items: flex-start;
+  }
+
+  .header-right {
+    width: 100%;
+
+    justify-content: space-between;
+  }
+
+  .logo-section h1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-container {
+    padding: 18px;
+  }
+
+  .header-right {
+    flex-wrap: wrap;
+
+    gap: 12px;
+  }
+
+  .icon-btn,
+  .saved-btn,
+  .post-btn {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+  .logo-section {
+    gap: 12px;
+  }
+
+  .logo-section h1 {
+    font-size: 30px;
+  }
+
+  .logo-section span {
+    font-size: 11px;
+  }
+}
+/* ===========================
+      LOGIN BUTTON
+=========================== */
+
+
+.login-btn {
+
+  border:none;
+
+  padding:12px 24px;
+
+  border-radius:12px;
+
+  background:#222;
+
+  color:white;
+
+  font-size:15px;
+
+  font-weight:700;
+
+  cursor:pointer;
+
+  transition:.3s;
+
+}
+
+
+.login-btn:hover {
+
+  background:#f5a623;
+
+}
+
+
+
+
+
+/* USER AREA */
+
+.user-box {
+
+  display:flex;
+
+  align-items:center;
+
+  gap:12px;
+
+  background:#f8f8f8;
+
+  padding:8px 14px;
+
+  border-radius:12px;
+
+}
+
+
+.user-box span {
+
+  font-size:14px;
+
+  font-weight:600;
+
+}
+
+
+
+.logout-btn {
+
+  border:none;
+
+  background:#ff5252;
+
+  color:white;
+
+  padding:8px 14px;
+
+  border-radius:8px;
+
+  cursor:pointer;
+
+  font-weight:600;
+
+}
+
+
+.logout-btn:hover {
+
+  background:#d93636;
+
+}
+/* ===========================
+        LOGIN BUTTON
+=========================== */
+
+
+.login-btn {
+
+  border: 1px solid #f5a623;
+
+  padding: 13px 25px;
+
+  background: white;
+
+  color: #f5a623;
+
+  border-radius: 12px;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: .3s;
+
+}
+
+
+.login-btn:hover {
+
+  background:#f5a623;
+
+  color:white;
+
+  transform:translateY(-2px);
+
+}
